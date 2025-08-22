@@ -2,9 +2,7 @@
 
 ```
 p1/
-├── src/
-│   └── main.py
-├── tests/
+├── main.py
 ├── .env
 ├── requirements.txt
 └── README.md
@@ -12,7 +10,13 @@ p1/
 
 ## Description
 
-Project1 is a Python-based application that utilizes LangChain framework and OpenAI capabilities.
+This suite of tools extends the agent's capabilities to interact with common business systems, enabling automation and quick access to information.
+
+- generate_sales_report(period, format_type, email_recipient): Creates comprehensive sales reports for specified periods (e.g., "monthly", "Q1 2024") in various formats and can email them out.
+- query_customer_database(customer_id, email, last_orders_count): Retrieves detailed customer information and their recent order history using ID or email.
+- create_jira_ticket(summary, description, assignee_email, priority): Automates the creation of new Jira tickets with specified details and assignments.
+- lookup_product_inventory(product_name, product_sku, warehouse_id): Checks current stock levels for products, optionally within a specific warehouse.
+- send_slack_message(channel, message): Facilitates sending messages to designated Slack channels or individual users.
 
 ## Requirements
 
